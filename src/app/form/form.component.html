@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="jumbotron">
+    <form #forms="ngForm" (ngSubmit)="Add(forms)">
+ 
+          <label class="form-group">
+              Name:
+            </label>
+            <input type="text" class="form-control"
+            
+            name="Name"
+      
+           [(ngModel)]="Name"
+        
+            >
+     
+<br>
+      <label class="form-group">
+          Email:
+        </label>
+        <input type="text" class="form-control"
+        
+        name="Email"
+  
+       [(ngModel)]="Email"
+    
+        >
+<br>        
+<label class="form-group">
+   Password:
+  </label>
+  <input type="text" class="form-control"
+  
+  name="Contact"
+
+ [(ngModel)]="Email"
+
+  >
+      
+      <br>
+      <button class="btn btn-primary"  type="submit" name="button">Add </button>
+    </form>
+    </div>
+</div>
+
+Employee data ={{forms.value | json}}
+
+<br>
+<div *ngIf="emp">
+{{emp.Name}}
+</div>
+
+
