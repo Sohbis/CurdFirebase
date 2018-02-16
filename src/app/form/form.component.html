@@ -32,7 +32,7 @@
   
   name="Contact"
 
- [(ngModel)]="Email"
+ [(ngModel)]="Contact"
 
   >
       
@@ -46,7 +46,15 @@ Employee data ={{forms.value | json}}
 
 <br>
 <div *ngIf="emp">
-{{emp.Name}}
+<ul>
+<li *ngFor="let empdetail of emp">
+name: {{empdetail.Name}}
+email: {{empdetail.Email}}
+contact: {{empdetail.Contact}}
+
+</li>
+
+</ul>
 </div>
 
 
