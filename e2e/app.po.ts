@@ -1,4 +1,4 @@
-import { browser, by, element } from 'protractor';
+import { browser, by, element } from '../Cruds/node_modules/protractor';
 
 export class AppPage {
   navigateTo() {

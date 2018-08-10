@@ -1,8 +1,14 @@
 
 export class Employee {
 
-    name: String;
-    email?: String;
-    phoneNumber?: number;
+    $key: string;
+
+    name: string;
+
+    position: string;
+
+    office: string;
+
+    salary: number;
 
 }
